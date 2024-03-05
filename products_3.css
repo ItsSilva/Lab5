@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+/*Navbar*/
+.hero{
+    height: 13vh;
+    width: 100%;
+    background-color: #000;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./recursos/banner.jpeg) ; */
+    background-size: cover;
+    background-position: center;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+}
+#top-span{
+    color: red;
+}
+
+#top ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+}
+#top ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#top ul li a:hover{
+    color: red;
+    transform: .3s;
+}
+#login{
+ border: none;
+ background: red;
+ padding: 12px 30px;
+ border-radius: 30px;
+ color: white;
+ font-weight: bold;
+ font-size: 15px;
+ transition: .4s;
+}
+/* #signin{
+    border: none;
+    background: red;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+} */
+/*Navbar*/
+
+/* search bar */
+.box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    width: 450px;
+    background: transparent;
+}
+
+.box a .fas{
+    color: red;
+    font-size: 18px;
+}
+/* search bar */
+
+/*Banner*/
+  .container{
+    width: 100vw;
+  }
+
+  .banner{
+    width: 100%;
+    height: 60%;
+    background-image: url(./recursos/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0.5rem;
+
+  }
+
+  .banner-text{
+    padding-top: 350px;
+    margin-left: 70px;
+}
+
+.banner-text h2{
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.banner-text h1{
+    margin-left: 5px;
+    font-size: 100px;
+    color: white;
+}
+
+#btn{
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+/*Banner*/
+
+/*Product Page*/
+
+    /* container */
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background: #ededed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product{
+        width: 90%;
+        max-width: 750px;
+        display: flex;
+    }
+    .gallery{
+        flex-basis: 47%;
+        background: #241e20;
+        transform: scale(1.08);
+        box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+    .gallery img{
+        width: 100%;
+        display: block;
+        padding-top: 120px;
+    }
+    /* container */
+
+    /* text */
+
+    .details{
+        flex-basis: 53%;
+        background: #fff;
+        padding: 40px;
+        padding-left: 60px;
+        box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+        font-size: 13px;
+        font-weight: 500;
+        color: #777;
+    }
+    .details h1{
+        color: #333;
+        font-size: 35px;
+    }
+    .details h2{
+        color: #555;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .details h3{
+        color: #00d874;
+        margin-bottom: 20px;
+    }
+    .details form{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .size-select{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .size-select p{
+        width: 70px;
+    }
+    .size-select input:checked + span{
+        color: blue;
+        font-weight: 600;
+    }
+    .size-select input{
+        display: none;
+    }
+    .size-select span{
+        padding: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    /* text */
+
+    /* color */
+    .color-select{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .color-select p{
+        width: 75px;
+    }
+    .color-select span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .color-1{
+        background: black;
+    }
+    .color-2{
+        background: red;
+    }
+    .color-3{
+        background: blue;
+    }
+    .color-select input{
+        display: none;
+    }
+    .color-select input:checked + span{
+        transform: scale(0.7);
+        box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+    }
+    /* color */
+
+    /* quantity */
+    .quantity-select{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .quantity-select p{
+        width: 75px;
+    }
+    .quantity-select input{
+        background: #eee;
+        border: 0;
+        outline: 0;
+        padding: 2px 2px 2px 15px;
+        width: 50px;
+        border-radius: 12px;
+    }
+    /* quantity */
+
+    /* bottom */
+    form button{
+        background: #553ff0;
+        color: #fff;
+        font-size: 17px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 30px;
+        border: 0;
+        outline: 0;
+        margin-top: 50px;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    /* bottom */
+
+/*Product Page*/
+
+/* Footer */
+footer{
+    background-color: #000;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+/* Footer Effects */
+.socialIcons a:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
